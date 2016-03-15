@@ -20,8 +20,8 @@ html,body{
 	-ms-transform:translateY(-50%);
 }
 .container p{
-	display: inline-block;
 	margin:50px;
+	word-wrap : break-word;
 }
 .circle_left,.circle_right{
 	width: 100px;
