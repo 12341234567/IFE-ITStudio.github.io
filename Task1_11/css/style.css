@@ -274,6 +274,10 @@ nav ul a {
 .module img {
     height: 7.5rem;
 }
+.module ul {
+    flex: 1;
+    margin-left: 10px;
+}
 .module ul li {
     background-color: #F8F8F8;
     padding: 10px;
@@ -307,9 +311,9 @@ nav ul a {
 .news1 div {
     width: 100%;
     padding-left: 15px;
-    display: -webkit-inline-flex;
-    display: -ms-inline-flex;
-    display: inline-flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
     -webkit-flex-flow: column nowrap;
     -ms-flex-flow: column nowrap;
     flex-flow: column nowrap;
