@@ -1,0 +1,138 @@
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td {padding: 0;margin: 0;}table {border-collapse: collapse;border-spacing: 0;}fieldset,img {border: 0;}address,caption,cite,code,dfn,em,strong,th,var {font-weight: normal;font-style: normal;}ol,ul {list-style: none;}caption,th {text-align: left;}h1,h2,h3,h4,h5,h6 {font-weight: normal;font-size: 100%;}abbr,acronym,a{color: #005ea7;text-decoration: none;}input{border:0;padding:2px;outline:none;color:#bcbcbc;}
+body{font: 14px "微软雅黑",Arial,"宋体",sans-serif;color: #333;}
+a,a:link,a:visited,a:hover,a:active {color: #333;text-decoration: none;}
+header{
+	width: 100%;
+	height: 55px;
+	overflow: hidden;
+}
+.logo{
+	float: left;
+	margin-left: 60px;
+}
+.logo a{
+	font: 22px "SimHei";
+	color: #393a3a;
+	line-height: 52px;
+}
+.logo a:before{
+	content: '';
+	width: 31px;
+	height: 31px;
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 12px;
+	background: url(../images/icon.png) 0 0 no-repeat;
+}
+nav{
+	float: right;
+}
+nav>a{
+	float: left;
+	line-height: 52px;
+	margin-right:20px;
+	padding: 0 15px;
+}
+.active,nav>a:hover{
+	border-bottom: 3px solid #e74f4d;
+}
+.login a{
+	margin-right: 60px;
+	line-height: 52px;
+	color: #e74f4d;
+}
+.login a:before{
+	content: '';
+	width: 14px;
+	height: 17px;
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 5px;
+	background: url(../images/icon.png) 0 -191px no-repeat;
+}
+.banner{
+	width:100%;
+	height: 690px;
+	background: url(../images/banner.png) 0 0 no-repeat;
+	background-size: cover;
+	position: relative;
+}
+.ban-mid{
+	color: #fff;
+	position: absolute;
+	top: 26%;
+	left: 8%;
+}
+.ban-mid h1{
+	font-size: 60px;
+}
+.ban-mid p{
+	width: 300px;
+	font-size: 20px;
+}
+.ban-mid a{
+	display: inline-block;
+	height: 60px;
+	overflow: hidden;
+	padding: 0 100px;
+	margin-top: 20px;
+	line-height: 60px;
+	font-size: 30px;
+	color: #fff;
+	background-color: #e74f4d;
+}
+.ban-mid a:hover{
+	background-color: #e1403e;
+}
+.intro{
+	width: 100%;
+	margin-bottom: 65px;
+	overflow: hidden;
+}
+.intro>div{
+	width: 25%;
+	float: left;
+	margin: 0 auto;
+}
+.intro-icon+p{
+	width: 50%;
+	padding: 0 25% 20px 25%;
+	text-align: center;
+	border-right: 2px solid #aba6a5;
+}
+.intro-icon{
+	width: 43px;
+	height: 43px;
+	margin: 45px auto;
+}
+.intro-icon1{
+	background: url(../images/icon.png) 0 -31px no-repeat;
+}
+.intro-icon2{
+	background: url(../images/icon.png) -43px -31px no-repeat;
+}
+.intro-icon3{
+	background: url(../images/icon.png) -86px -31px no-repeat;
+}
+.intro-icon4{
+	background: url(../images/icon.png) -129px -31px no-repeat;
+}
+.note-head{
+	width: 100%;
+	height: 275px;
+	padding-top:85px;
+	background-color: #ededec;
+}
+.icon-big{
+	width: 91px;
+	height: 91px;
+	background: url(../images/icon.png) 0 -74px no-repeat;
+	margin: 0 auto;
+}
+.note-head h1{
+	margin-top: 46px;
+	font-size: 50px;
+	color: #867e7a;
+	text-align: center;
+}
+
