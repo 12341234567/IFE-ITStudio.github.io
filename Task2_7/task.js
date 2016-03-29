@@ -79,16 +79,16 @@ window.onload = function(){
     	alert("没有该元素");
     });
     //点击某个li
-    window.addEventListener("click",function(){
+    addChild.addEventListener("click",function(){
         //clearInterval(action);
 	    var listArr = document.getElementsByClassName("li");
 		for(var i =0; i< listArr.length;i++){
 	    	listArr[i].onclick=function(){
-                //console.log(this);
 	    		alert("被删除的元素的值:"+this.innerHTML);
 	    		this.remove();
 	    	}
-		}    	
+		}
+        getValues();    	
     });
     sortbtn.addEventListener("click",function(){
         sort();
@@ -98,14 +98,17 @@ window.onload = function(){
 var action;
 var valueArr = [];
 var speed = 20;
-function sort(){
+function getValues(){
     var listArr = document.getElementsByClassName("li");
     for(var i=0;i<listArr.length;i++){
         valueArr[i] = parseInt(listArr[i].innerHTML);
-    }
-    for(var k=0;k<listArr.length;k++){
+    }  
+}
+function sort(){
+    getValues();
+    for(var k=0;k<valueArr.length;k++){
         var value;
-        for(var j=0;j<listArr.length-1;j++){
+        for(var j=0;j<valueArr.length-1;j++){
             if(valueArr[j]>valueArr[j+1]){
                 value = valueArr[j];
                 valueArr[j] = valueArr[j+1];
