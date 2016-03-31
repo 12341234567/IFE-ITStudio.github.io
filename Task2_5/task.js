@@ -79,7 +79,7 @@ function renderChart() {
   var ul = document.createElement("ul");
   var i = 0;
   var arr = [];
-  if(pageState.nowGraTime === "day"){
+  if(pageState.nowGraTime === "day"){//日空气污染指数
     for(var key in chartData[pageState.nowSelectCity]){
       var li = document.createElement("li");
       li.title = key+"空气污染指数:"+chartData[pageState.nowSelectCity][key];
@@ -91,7 +91,7 @@ function renderChart() {
       ul.appendChild(li);
     }
     ul.style.height = Math.max.apply(null, arr);
-  }else if(pageState.nowGraTime === "week"){
+  }else if(pageState.nowGraTime === "week"){//周空气污染指数
     var weekArr = [];
     var length = Object.getOwnPropertyNames(chartData[pageState.nowSelectCity]).length;
     var index;
@@ -123,7 +123,7 @@ function renderChart() {
       li.style.backgroundColor=color[Math.floor(weekArr[i]/80)];
       ul.appendChild(li);
     }
-  }else{
+  }else{//月空气污染指数
     var monthNumArr = [];
     var monthArr = [];
     for(var key in chartData[pageState.nowSelectCity]){
@@ -152,7 +152,7 @@ function renderChart() {
       }
       flag += monthNumArr[i];
     }
-     for(var i=0;i<monthArr.length;i++){
+    for(var i=0;i<monthArr.length;i++){
       var li = document.createElement("li");
       li.title = (i+1)+"月空气污染指数:"+monthArr[i];
       li.style.height = monthArr[i]+"px";
