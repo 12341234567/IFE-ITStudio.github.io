@@ -50,7 +50,7 @@
     	alert("没有该元素");
     });
     //点击某个div
-    window.addEventListener("click",function(){
+    addChild.addEventListener("click",function(){
 	    var listArr=document.getElementsByClassName("div");
 		for(var i =0; i< listArr.length;i++){
 	    	listArr[i].onclick=function(){
