@@ -109,7 +109,7 @@ function addTagStyle(){
 }
 
 function trim(str){
-    return str.replace(/\s|,|，+$|^\s+/g,"");
+    return str.replace(/\s|,|，+$|^\s|,|，+/g,"");
 }
 
 function trim_textarea(str){
